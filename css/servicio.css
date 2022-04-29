@@ -8,15 +8,30 @@ body{
     font-size: 1.2rem;
     line-height: 1.2em;
 }
+.header {
+    padding:0.67em;
+    text-align: center;
+    background: hsl(165, 2%, 33%);
+    color: white;
+    position:fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
 .container {
     display: flex;
     justify-content: space-between;
 
 }
+
 p{font-family: Arial, Helvetica, sans-serif;
     padding-top: 9rem;
 }
-
+.logo{
+    font-size: 1.5em;
+    padding: 0.5em 2em;
+    letter-spacing: 0.3em;
+}
 
 .logo a{
      padding:0.2rem;
@@ -26,19 +41,11 @@ p{font-family: Arial, Helvetica, sans-serif;
      float:left;
       
 }
-.header {
-    padding:0.67em;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    position:fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-}
-.header a{
-    text-decoration: none;}
 
+.header a{
+    text-decoration: none;
+    color: white;
+}
 .logo-nav{
         display: flex;
         justify-content: space-between;
@@ -48,10 +55,14 @@ p{font-family: Arial, Helvetica, sans-serif;
 
 
 /* barra de navegacion */
+.menu-icon{
+    color: white;
+    display: none;
+}
+
 .nav {
     margin-top: 1rem;
     display: flex;
-    background-color: rgb(82, 147, 167);
 }
 .nav ul{
     list-style: none;
@@ -67,7 +78,7 @@ p{font-family: Arial, Helvetica, sans-serif;
     padding:0.7em;
     text-decoration: none;
     text-align: center;
-    transition: all 0.8s;
+    transition: all 0.8s linear;
 }
 
 /* Change color on hover */
