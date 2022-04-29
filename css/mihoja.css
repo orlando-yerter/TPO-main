@@ -1,0 +1,113 @@
+*{box-sizing: border-box;
+}
+
+/* Style del  body */
+body{
+    font-family: Arial;
+       margin: 0;
+       padding: 15px;
+}
+
+.logo{padding: 5px;
+        width: 15%;
+        height: 30px;
+        font-size:30px;
+        float:left;
+}
+
+    /* Header*/
+.header {padding: 10px;
+         text-align: center; 
+         background: #1abc9c;
+         color: white;
+}
+
+    /* barra de navegacion */
+.nav{display: flex;
+    background-color: rgb(50, 77, 230);
+}
+
+
+    /* estilos para los links */
+.nav a {color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+}
+    /*  color  hover nav */
+.nav a:hover {background-color: rgb(48, 175, 80);
+              color: rgb(33, 21, 65);
+}
+
+h1:hover{color: darkorange;}
+
+.caja{
+      display:grid;
+      grid-template: 80%;
+      grid-template-areas:
+     "header" 
+     "nav"  
+     "section"
+     "aside"  
+     "footer";
+ grid-gap: 10px;
+ height: 90vh;
+}
+
+.header{grid-area:header;}
+.nav{grid-area:nav;}
+.aside{grid-area:aside;}
+.section{grid-area:section;}
+
+@media only screen and (min-width:600px){
+.caja{display:grid;
+      grid-template: 80%;
+      
+grid-template-areas:
+     "header  nav"      
+     "section"
+     "aside"  
+     "footer";
+ grid-gap: 10px;
+}
+}
+
+.header{grid-area:header;}
+.nav{grid-area:nav;}  
+.aside{grid-area:aside;}
+.section{grid-area:section;}
+.footer{grid-area:footer;}
+@media  screen and (max-width:1200px){body 
+    {background-color:rgb(155, 197, 144) ;
+   
+
+
+
+    }    
+}
+
+h2{text-align:center;}
+p[name=parrafo]{color: #a37571;
+ 
+    margin-left: 5px;
+    overflow:auto;
+    display:block
+}
+
+.text{background-color:rgb(32, 241, 207);}
+
+.footer {
+    
+    font-size: 39px;font-family: "Times New Roman", Times, serif;
+    text-align:center;}
+    footer:hover{color:rgb(36, 196, 15);}
+
+.formulario{background-color:rgb(0, 255, 213);
+  }		
+		
+button{background-color: rgb(50, 77, 245);
+       padding: 15px 20px;
+       border: 10px solid #e2dfd8; /*color naranja para el borde*/ 
+}
+
+      

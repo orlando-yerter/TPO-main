@@ -1,0 +1,133 @@
+
+*{box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+p{font-family: Arial, Helvetica, sans-serif;
+    padding-top: 9rem;
+}
+
+
+.logo a{
+     padding:0.2rem;
+        
+     height:2.5em;
+     font-size:3em;
+     float:left;
+      
+}
+.header {
+    padding:0.67em;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    position:fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header a{
+    text-decoration: none;}
+
+.logo-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }   
+
+
+/* barra de navegacion */
+.nav {
+    margin-top: 1rem;
+    display: flex;
+    background-color: rgb(82, 147, 167);
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    display: inline-block;
+}
+
+/* estilos para los links */
+.nav ul li a {
+    display: block;
+    color: white;
+    padding:0.7em;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.8s;
+}
+
+/* Change color on hover */
+.nav a:hover {
+    background-color: rgb(48, 175, 80);
+    color: rgb(33, 21, 65);
+}
+h2:hover{color:rgb(238, 114, 97);}
+h1:hover{color:rgb(214, 97, 238);}
+b:hover{color:rgb(22, 59, 221);}
+/* transision */
+.figure :hover {width: 230px;}
+
+/* contenedor */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  
+/* barra lateral isquerda */
+.aside {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main  */
+.section {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* fotos */
+.figure {
+    background-color: rgb(137, 158, 189);
+
+    padding: 20px;
+    transition: width 3s;
+    
+    transition-timing-function: ease-in-out;
+}
+/*iframe estilo */
+.ifram{ background-color: rgb(56, 122, 221);
+        width: 100%;
+} 
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(109, 226, 98);
+}
+
+/*  600px 2 clumnas */
+@media (max-width: 600px) {
+
+    .row,
+    .nav {
+        flex-direction: column;
+    }
+}

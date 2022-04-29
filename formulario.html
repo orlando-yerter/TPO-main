@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="css/mihoja.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- enlace a  FA --> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  
+</script>
+<script src="js/formulario.js" language="javascript" type="text/javascript"></script>
+
+   <title>formulario contacto</title>
+</head>
+
+<body>
+<header>
+   
+    <!-- Header -->
+    <div class="header">
+    				<!-- logo pgina -->
+    				<div class="logo" <h1>Tz</h1></div>
+    				        <h1>TECZERVICE REFRIGERACION </h1>                                
+    </div>
+</header>
+
+    <!-- Navigation Bar -->
+    <nav>
+    <div class="nav">     					    							
+     					    							
+        <a href="index.html">INICIO</a>
+        <a href="servicios.html">SERVICIOS</a>
+       
+        <a href="formulario.html">CONTACTO</a>
+    </div>
+    </nav>				
+				
+				
+<div class="caja">
+    
+
+   
+    
+ <section>
+  <div class="formulario">
+    <div class="text"><h2>por favor Ingrese sus datos :</h2></div>
+
+        <form name="form" action="#" method="POST" onsubmit="validar();">
+
+            <label for="nombre"><i class="fa fa-user"></i> Nombre : </label> <input type="text" name="nombre" id="firstname"               
+            placeholder="Ingrese su nombre aqui..." required><span id="requerido">*</span> <br><br>
+
+            <label for="apellido"> <i class="fa fa-user"></i>Apellido:</label> <input type="text" name="apellido" id="lastname"
+                    placeholder="Ingrese su apellido aqui..." required><span id="requerido">*</span><br><br>
+                    
+            <label for="telefono"><i class="fa fa-phone" aria-hidden="true"></i> Telefono:</label> <input type="tel" name="tel" id="telefono"
+                    placeholder="ingrese su telefono aqui ...."><br><br>
+
+            <label for="mail"><i class="fa fa-at" aria-hidden="true"  style="color: rgb(43, 135, 221)";></i>   eMail :  </label> <input type="email" name="mail" id="mail"
+                    placeholder="ingrese su mail aqui ...." required>
+                    <span id="requerido">*</span><br><br>
+                    <span id="requerido">* Campos obligatorios</span>
+            <div id="boton"><button onclick ="validar();"> Enviar</button></div>
+
+        </form>
+        </div>
+        <br>
+</section>
+    
+    <footer class="footer" ><div id="iconos-sociales"> 
+        
+        
+        </div>
+        <p>teczervice@gmail.com </p>
+    </footer></div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
