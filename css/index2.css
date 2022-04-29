@@ -149,6 +149,9 @@ b:hover{color:rgb(22, 59, 221);}
     .nav ul{
         display: none;
     }
+    .nav ul.show{
+        display: block;
+    }
     .row,
     .nav {
         flex-direction: column;
