@@ -5,43 +5,70 @@
 body{
     font-family: Arial;
        margin: 0;
-       padding: 15px;
+       padding: 0;
 }
 
-.logo{padding: 5px;
-        width: 15%;
-        height: 30px;
-        font-size:30px;
-        float:left;
+.logo{
+    padding: .5em;
+    letter-spacing: 0.3em;        
+    font: size 1.5em;;
+        
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
 
     /* Header*/
-.header {padding: 10px;
+.header {padding: 0.67em;;
          text-align: center; 
-         background: #1abc9c;
+         background: hsl(165, 2%, 33%);
          color: white;
+         position:fixed;
+         left: 0;
+         top: 0;
+         right: 0;
+
+}
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+
     /* barra de navegacion */
-.nav{display: flex;
-    background-color: rgb(50, 77, 230);
+.nav{display: flex;margin-top: 1rem;
+
 }
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    display: inline-block;
+}
+
+
 
 
     /* estilos para los links */
-.nav a {color: white;
+.nav ul li a {color: white;
         padding: 14px 20px;
         text-decoration: none;
         text-align: center;
 }
     /*  color  hover nav */
-.nav a:hover {background-color: rgb(48, 175, 80);
+.nav ul li a:hover {background-color: rgb(48, 175, 80);
               color: rgb(33, 21, 65);
 }
 
 h1:hover{color: darkorange;}
 
 .caja{
+      padding-top: 5em;
       display:grid;
       grid-template: 80%;
       grid-template-areas:
@@ -60,7 +87,9 @@ h1:hover{color: darkorange;}
 .section{grid-area:section;}
 
 @media only screen and (min-width:600px){
-.caja{display:grid;
+.caja{
+    padding-top: 8em;
+    display:grid;
       grid-template: 80%;
       
 grid-template-areas:
