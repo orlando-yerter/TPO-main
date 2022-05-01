@@ -162,10 +162,17 @@ b:hover{color:rgb(22, 59, 221);}
     }.nav ul li{
         display:block;
     }
+<<<<<<< HEAD:css/index2.css
     display:block;
     padding: 0.5rem ;
     text-decoration: none;
     transition: all 0.6s linear ;
+=======
+    .row,
+    {
+        flex-direction: column;
+    }
+>>>>>>> c0dced242df81c58462cfd4f722f20b9e6e587e8:CSS/index2.css
 }
 .nav ul li a:hover{
     background: #ff00e6;
