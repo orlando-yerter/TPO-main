@@ -1,0 +1,174 @@
+
+*{box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+}
+
+/* aqui commienza espacio logo y barra de nav */
+.header {
+    padding:0.67em;
+    text-align: center;
+    background: hsl(165, 2%, 33%);
+    color: white;
+    position:fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.logo{
+    font-size: 1.5em;
+    padding: 0.5em 2em;
+    letter-spacing: 0.3em;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+p{font-family: Arial, Helvetica, sans-serif;
+    padding-top: 9rem;
+}
+h1{
+    color: #000;
+    padding-top: 4em;
+}
+
+.logo a{
+    padding: 0.2rem;
+    text-align:left;
+    text-align: center;
+    height: 3.5em;
+    font-size: 6em;
+    float:left;
+}
+
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* barra de navegacion */
+.menu-icon{
+    color: white;
+    display: none;
+}
+.nav {
+    margin-top: 1rem;
+    display: flex;
+    
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    display: inline-block;
+}
+
+
+/* estilos para los links */
+.nav ul li a {
+    display: block;
+    color: white;
+    padding: 0.7em ;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.8 linear;
+}
+/* Change color on hover */
+.nav ul li a:hover {
+    background-color: rgb(48, 175, 80);
+    color: rgb(33, 21, 65);
+}
+h2:hover{color:rgb(238, 114, 97);}
+h1:hover{color:rgb(214, 97, 238);}
+b:hover{color:rgb(22, 59, 221);}
+/* transision */
+.figure :hover {width: 350px;}
+
+/* contenedor */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  
+/* barra lateral isquerda */
+.aside {
+    flex: 40%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main  */
+.section {
+    flex: 40%;
+    background-color: white;
+    padding: 10px;
+}
+
+/* fotos */
+.figure { width: 100%;
+    background-color: rgb(137, 158, 189);
+
+    padding: 10px;
+    transition: width ;
+   
+    transition-duration: 5s;
+    overflow: hidden;
+}
+.img{
+
+}  
+/*iframe estilo */
+.ifram{ background-color: rgb(56, 122, 221);
+        width: 100%;
+} 
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(109, 226, 98);
+    margin-top: 6rem;
+}
+
+/*  600px 2 clumnas */
+@media (max-width: 600px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    nav{
+        .width: 100%;
+        margin-top: 1rem;
+    }
+    .nav ul{
+        display: none;
+    }
+    .nav ul.show{
+        display: block;
+    }.nav ul li{
+        display:block;
+    }
+    .row,
+    {
+        flex-direction: column;
+    }
+
+.nav ul li a:hover{
+    background: #ff00e6;
+    border-radius: 1em;
+    }
+    
